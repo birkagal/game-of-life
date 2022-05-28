@@ -1,0 +1,10 @@
+body {
+    user-select: none;
+    background: #0a0a0a;
+    color: #919191;
+    font-family: "Roboto Mono", monospace;
+}
+
+.header {
+    font-size: 4vw !important;
+}

@@ -1,0 +1,32 @@
+.title {
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+    color: #d4d4d4;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.board {
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #181818;
+}
+
+button {
+    color: #fff !important;
+    border: none;
+    background: #62a87c;
+    margin-right: 0.25em;
+}
+
+button:hover {
+    color: #fff;
+}
