@@ -1,14 +1,20 @@
-import "../styles/Grid.css";
 import { useState, useRef, useCallback, useEffect } from "react";
 import { FiPause, FiPlay, FiXCircle, FiRefreshCcw } from "react-icons/fi";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import styled from "styled-components";
 import useInterval from "../hooks/useInterval";
 import Cell from "./Cell";
 import { randomBoard, emptyBoard } from "./utils";
 
 const SIMUL_BASE_SPEED = 600;
 const SUMIL_STEP_SPEED = 100;
+
+const Board = styled.div`
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+`;
 
 const Grid = () => {
     const [cols, setCols] = useState(0);
@@ -92,7 +98,7 @@ const Grid = () => {
 
     return (
         <>
-            <div
+            <Board
                 onMouseDown={(e) => setDragged(true)}
                 onMouseUp={(e) => setDragged(false)}
                 onMouseLeave={(e) => setDragged(false)}
@@ -115,7 +121,7 @@ const Grid = () => {
                         />
                     ))
                 )}
-            </div>
+            </Board>
             <div className="buttons pt-5">
                 <Button
                     variant="secondary"

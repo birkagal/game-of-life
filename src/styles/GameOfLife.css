@@ -3,8 +3,16 @@ body {
     background: #0a0a0a;
     color: #919191;
     font-family: "Roboto Mono", monospace;
+    overflow: hidden;
 }
 
-.header {
-    font-size: 4vw !important;
+button {
+    color: #fff !important;
+    border: none;
+    background: #62a87c;
+    margin-right: 0.25em;
+}
+
+button:hover {
+    color: #fff;
 }
